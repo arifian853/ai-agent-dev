@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arifian — Product Designer & Design Systems Architect</title>
+  <meta name="description" content="Portfolio of Arifian, Senior Product Designer and Design Systems Architect specializing in Soft Editorial Materialism, calm interfaces, and human-centric software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;600&family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement / Context Bar -->
+  <div class="context-banner">
+    <div class="container banner-inner">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for select design systems advisory & Q1/Q2 engagements</span>
+      </div>
+      <div class="banner-meta">
+        <span class="mono-meta">SUBTLE v1.0 • ROSEWOOD MOOD</span>
+        <button type="button" class="cmd-shortcut-hint" id="open-cmd-hint" aria-label="Open command palette (Press Control K)">
+          <kbd>Ctrl</kbd> + <kbd>K</kbd>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adaptive App Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand" aria-label="Arifian Portfolio Home">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Arifian</span>
+        <span class="brand-role">Systems / Product</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Overview</a></li>
+          <li><a href="#skills" class="nav-link">Craft</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="cmd-btn" aria-label="Open command bar">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Cmd Bar</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Conversation</a>
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Overview</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Craft</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    
+    <!-- FEATURE 1: TONAL HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="context-capsule">
+            <span class="capsule-tag">Design Systems & Product Design</span>
+            <span class="capsule-divider">•</span>
+            <span class="capsule-loc">Jakarta, ID (UTC+7)</span>
+          </div>
+
+          <h1 class="hero-title">
+            Crafting quiet, resilient digital systems.
+          </h1>
+
+          <p class="hero-lead">
+            I am Arifian, a product designer and design systems architect. I bridge editorial composition with rigorous Material-inspired product ergonomics — delivering calm, intentional experiences that scale across enterprise products.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">Explore Selected Works</a>
+            <a href="#skills" class="btn btn-secondary btn-lg">Inspect Architecture</a>
+            <button type="button" class="btn btn-tonal btn-lg" id="copy-email-btn" data-email="arifian@subtle.web.id">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <span class="meta-value">8+ Years</span>
+              <span class="meta-label">Shipping software</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-value">40+ Tokens</span>
+              <span class="meta-label">Design token contract</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-value">WCAG 2.2</span>
+              <span class="meta-label">AA compliance standard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Aside / Signature Media Surface -->
+        <div class="hero-aside">
+          <div class="hero-card-signature">
+            <div class="signature-header">
+              <div class="signature-badge">SUBTLE ARCHITECTURE</div>
+              <div class="signature-dot-array">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            
+            <div class="signature-visual">
+              <div class="visual-artboard">
+                <div class="artboard-row">
+                  <div class="artboard-pill pill-primary">Primary Token</div>
+                  <div class="artboard-pill pill-container">Container Token</div>
+                </div>
+                <div class="artboard-canvas">
+                  <div class="canvas-bar">
+                    <span class="bar-title">Rosewood Mood Surface</span>
+                    <span class="bar-code">#7A4F55</span>
+                  </div>
+                  <div class="canvas-grid-preview">
+                    <div class="grid-cell active"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                  </div>
+                </div>
+                <div class="artboard-footer">
+                  <span class="footer-note">Editorial Rhythm: 8pt baseline</span>
+                  <span class="footer-state">State: Synchronized</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="signature-footer">
+              <div class="author-info">
+                <div class="avatar-ring">
+                  <span class="avatar-fallback">AR</span>
+                </div>
+                <div>
+                  <div class="author-name">Arifian Studio</div>
+                  <div class="author-meta">Philosophy: Quiet Expressiveness</div>
+                </div>
+              </div>
+              <span class="status-chip chip-available">Active in Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 2: BENTO CARDS (SOFT MOSAIC) FOR SKILLS & TOOLS -->
+    <section class="section bento-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">01 / CRAFT & CAPABILITIES</div>
+          <h2 class="section-title">Soft Mosaic: Skills, ergonomics & tool stack</h2>
+          <p class="section-desc">
+            A balanced arrangement of design craft, token architecture, and front-of-the-frontend implementation capabilities.
+          </p>
+        </div>
+
+        <div class="bento-mosaic">
+          <!-- Dominant Tile: Design Systems Architecture -->
+          <article class="bento-tile tile-span-8 tile-heroic">
+            <div class="tile-header">
+              <span class="tile-pill">Core Focus</span>
+              <span class="mono-meta">DS-ARCH-01</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Design System Architecture & Semantic Tokens</h3>
+              <p class="tile-text">
+                Authoring scalable token taxonomies spanning global, semantic, and component levels. Architecting unified theme engines supporting multi-mood palettes (like this Rosewood mood), WCAG AA automated contrast validation, and seamless synchronization between Figma Variables and CSS custom properties.
+              </p>
+              <div class="tag-cloud">
+                <span class="tag">Design Tokens</span>
+                <span class="tag">Component Anatomy</span>
+                <span class="tag">Figma Tokens / Variables</span>
+                <span class="tag">Multi-theme Orchestration</span>
+                <span class="tag">WCAG 2.2 AA Contrast</span>
+                <span class="tag">Design Governance</span>
+              </div>
+            </div>
+            <div class="tile-illustration">
+              <div class="token-flow">
+                <div class="token-node">Global: #FAF5F5</div>
+                <div class="token-connector">→</div>
+                <div class="token-node active">Semantic: --bg-main</div>
+                <div class="token-connector">→</div>
+                <div class="token-node">Component: Card.Background</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Interactive Inspector Tile: Live Token Tuning -->
+          <article class="bento-tile tile-span-4 tile-interactive">
+            <div class="tile-header">
+              <span class="tile-pill">Interactive Demo</span>
+              <span class="mono-meta">LIVE-INSPECTOR</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Live Token Tester</h3>
+              <p class="tile-text">Test the Rosewood token scale live in this preview tile.</p>
+              
+              <div class="token-tester-controls">
+                <label for="radius-slider" class="tester-label">
+                  Corner Radius: <span id="radius-val" class="mono-meta">16px</span>
+                </label>
+                <input type="range" id="radius-slider" min="4" max="32" value="16" step="4" class="custom-slider" aria-label="Adjust corner radius preview">
+
+                <div class="tone-toggle-group" role="group" aria-label="Select surface tone">
+                  <button type="button" class="btn-tone active" data-tone="surface">Surface</button>
+                  <button type="button" class="btn-tone" data-tone="variant">Variant</button>
+                  <button type="button" class="btn-tone" data-tone="container">Container</button>
+                </div>
+
+                <div class="live-sample-box" id="live-sample">
+                  <span class="sample-label">Subtle Tonal Depth</span>
+                  <span class="sample-subtext">Quiet, purposeful feedback</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Ergonomics Tile -->
+          <article class="bento-tile tile-span-4 tile-interaction">
+            <div class="tile-header">
+              <span class="tile-pill">Interaction</span>
+              <span class="mono-meta">UX-02</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Product Ergonomics & Usability</h3>
+              <p class="tile-text">
+                Designing interfaces that feel effortless under cognitive load, grounded in clear touch targets, logical keyboard tab order, and purposeful micro-feedback.
+              </p>
+              <ul class="clean-list">
+                <li>Accessible focus management & ARIA states</li>
+                <li>Complex data tables & contextual inspectors</li>
+                <li>Optimistic UI & deterministic feedback loops</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tools & Production Stack Tile -->
+          <article class="bento-tile tile-span-4 tile-stack">
+            <div class="tile-header">
+              <span class="tile-pill">Stack</span>
+              <span class="mono-meta">ENV-03</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Tool Stack & Technologies</h3>
+              <p class="tile-text">
+                Deep multi-disciplinary production expertise spanning modern design systems tooling, front-of-the-frontend architecture, and automated token pipelines.
+              </p>
+              <div class="tool-grid">
+                <div class="tool-item">
+                  <span class="tool-badge">Figma</span>
+                  <span class="tool-role">Variables, Auto-layout, Variants</span>
+                </div>
+                <div class="tool-item">
+                  <span class="tool-badge">HTML5/CSS3</span>
+                  <span class="tool-role">Modern tokens, Grid, Flex, Clamp</span>
+                </div>
+                <div class="tool-item">
+                  <span class="tool-badge">JavaScript</span>
+                  <span class="tool-role">ES6+, DOM APIs, Micro-interactions</span>
+                </div>
+                <div class="tool-item">
+                  <span class="tool-badge">Git & CI</span>
+                  <span class="tool-role">GitHub, Token sync workflows</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Research & Systems Governance Tile -->
+          <article class="bento-tile tile-span-4 tile-research tile-toned">
+            <div class="tile-header">
+              <span class="tile-pill">Research</span>
+              <span class="mono-meta">RES-04</span>
+            </div>
+            <div class="tile-body">
+              <h3 class="tile-title">Research & System Adoption</h3>
+              <p class="tile-text">
+                Validating usability through qualitative designer-developer sessions, automated accessibility audits, and telemetry tracking to ensure high cross-team velocity.
+              </p>
+              <div class="research-metrics">
+                <div class="stat-highlight">
+                  <span class="stat-number">94%</span>
+                  <span class="stat-desc">Component adoption across squads</span>
+                </div>
+                <div class="stat-highlight">
+                  <span class="stat-number">4.9/5</span>
+                  <span class="stat-desc">Developer satisfaction & DX rating</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 3: EXPERIENCES TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">02 / CAREER TRAJECTORY</div>
+          <h2 class="section-title">Experiences: Crafting products with longevity</h2>
+          <p class="section-desc">
+            Over eight years of leading product design, scaling design organizations, and building systems that engineers love building with.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience 1 -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period mono-meta">2024 — Present</span>
+                  <h3 class="timeline-role">Lead Design Systems Architect</h3>
+                  <div class="timeline-company">Lumina Cloud Technologies • Remote / Jakarta</div>
+                </div>
+                <span class="status-chip chip-active">Current Role</span>
+              </div>
+              <p class="timeline-summary">
+                Leading the core Design Systems team for Lumina's unified cloud infrastructure console. Spearheaded the complete migration from legacy ad-hoc components to a unified multi-brand token system serving 28 product squads.
+              </p>
+              <ul class="timeline-points">
+                <li>Reduced front-end component drift by 76% across 14 enterprise micro-frontends.</li>
+                <li>Created automated token pipeline exporting from Figma Variables directly to npm token packages (CSS custom properties, JSON, iOS Swift, Android XML).</li>
+                <li>Conducted company-wide accessibility remediation reaching full WCAG 2.2 AA certification.</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="tag">Design Tokens</span>
+                <span class="tag">Enterprise SaaS</span>
+                <span class="tag">Accessibility (a11y)</span>
+                <span class="tag">Cross-functional Governance</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2 -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period mono-meta">2022 — 2024</span>
+                  <h3 class="timeline-role">Senior Product Designer</h3>
+                  <div class="timeline-company">Vektor Studio • Design Consultancy</div>
+                </div>
+                <span class="status-chip chip-past">Completed</span>
+              </div>
+              <p class="timeline-summary">
+                Directed product design and UX architecture for high-growth Series A–C venture clients across Southeast Asia, Tokyo, and Sydney. Focused on calm software, fintech dashboards, and editorial publishing experiences.
+              </p>
+              <ul class="timeline-points">
+                <li>Designed an award-winning wealth management interface resulting in a 42% increase in monthly active transaction volume.</li>
+                <li>Created bespoke design system kits for 6 client engineering teams, accelerating MVP launch velocity by 2.5x.</li>
+                <li>Mentored 5 junior and mid-level designers in interaction ergonomics and semantic typography.</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="tag">Fintech UX</span>
+                <span class="tag">Client Advisory</span>
+                <span class="tag">Rapid Prototyping</span>
+                <span class="tag">Figma Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 3 -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period mono-meta">2020 — 2022</span>
+                  <h3 class="timeline-role">Product Designer & Front-of-the-Frontend</h3>
+                  <div class="timeline-company">Katalis Labs • SaaS Incubator</div>
+                </div>
+                <span class="status-chip chip-past">Completed</span>
+              </div>
+              <p class="timeline-summary">
+                Collaborated closely with engineering founders to research, design, and code production UI prototypes for B2B workflow automation platforms.
+              </p>
+              <ul class="timeline-points">
+                <li>Authored the initial design system codebase combining HTML5 semantic structures, responsive CSS layouts, and modular component primitives.</li>
+                <li>Conducted 80+ customer discovery interviews and synthesized telemetry data into actionable user journey improvements.</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="tag">User Research</span>
+                <span class="tag">HTML/CSS Prototyping</span>
+                <span class="tag">Design Sprints</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 4 -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period mono-meta">2018 — 2020</span>
+                  <h3 class="timeline-role">Interaction & UI Designer</h3>
+                  <div class="timeline-company">Monolith Interactive • Digital Agency</div>
+                </div>
+                <span class="status-chip chip-past">Completed</span>
+              </div>
+              <p class="timeline-summary">
+                Crafted interactive websites, brand guidelines, and high-fidelity motion prototypes for tech startups, cultural institutions, and publications.
+              </p>
+              <div class="timeline-skills">
+                <span class="tag">Visual Design</span>
+                <span class="tag">Micro-interactions</span>
+                <span class="tag">Editorial Layout</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 4: EDUCATION & CREDENTIALS -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">03 / ACADEMIC & CREDENTIALS</div>
+          <h2 class="section-title">Education: Foundations in computing & human factors</h2>
+          <p class="section-desc">
+            Rigorous grounding in human-computer interaction, cognitive science, and software engineering principles.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <article class="education-card highlight">
+            <div class="edu-badge">DEGREE</div>
+            <span class="mono-meta">2014 — 2018</span>
+            <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+            <div class="edu-institution">University of Indonesia (Universitas Indonesia)</div>
+            <p class="edu-desc">
+              Specialized in Human-Computer Interaction (HCI) and Interactive Systems. Authored undergraduate thesis on <em>"Cognitive Load Reduction in Data-Dense Software Interfaces through Tonal Visual Hierarchy."</em> Graduated with Honors (Cum Laude).
+            </p>
+            <div class="edu-courses">
+              <span class="tag">HCI Research</span>
+              <span class="tag">Cognitive Ergonomics</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Web Engineering</span>
+            </div>
+          </article>
+
+          <!-- Certification 1 -->
+          <article class="education-card">
+            <div class="edu-badge">CERTIFICATION</div>
+            <span class="mono-meta">2023</span>
+            <h3 class="edu-degree">Certified Web Accessibility Specialist (W3Cx)</h3>
+            <div class="edu-institution">World Wide Web Consortium (W3C)</div>
+            <p class="edu-desc">
+              Comprehensive certification encompassing WCAG 2.2 Level A/AA/AAA guidelines, ARIA authoring practices, accessible typography, color contrast science, and assistive technology screen reader verification.
+            </p>
+            <div class="edu-courses">
+              <span class="tag">WCAG 2.2</span>
+              <span class="tag">ARIA Practices</span>
+              <span class="tag">Assistive Tech</span>
+            </div>
+          </article>
+
+          <!-- Certification 2 -->
+          <article class="education-card">
+            <div class="edu-badge">ADVANCED PROGRAM</div>
+            <span class="mono-meta">2021</span>
+            <h3 class="edu-degree">Design Systems Leadership</h3>
+            <div class="edu-institution">Design Systems Academy • San Francisco (Remote)</div>
+            <p class="edu-desc">
+              Multi-month executive program focused on multi-tier token taxonomy architecture, cross-platform component governance, deprecation lifecycle strategies, and enterprise engineering buy-in.
+            </p>
+            <div class="edu-courses">
+              <span class="tag">Token Architecture</span>
+              <span class="tag">Enterprise Governance</span>
+            </div>
+          </article>
+
+          <!-- Recognition & Writing -->
+          <article class="education-card">
+            <div class="edu-badge">PUBLICATIONS & TALKS</div>
+            <span class="mono-meta">2020 — 2026</span>
+            <h3 class="edu-degree">Published Articles & Community Speaker</h3>
+            <div class="edu-institution">Design Systems Community & UX Indonesia</div>
+            <p class="edu-desc">
+              Author of numerous technical articles on <em>Subtle Design</em>, <em>Quiet Expressiveness</em>, and <em>Multi-Mood Tonal Palettes</em>. Keynote speaker at Jakarta Design Systems Conf 2024.
+            </p>
+            <div class="edu-courses">
+              <span class="tag">Keynote Speaker</span>
+              <span class="tag">Technical Writing</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 5: SELECTED PROJECTS (WITH INTERACTIVE MODAL) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <div class="section-kicker">04 / SELECTED WORKS</div>
+            <h2 class="section-title">Projects: Systems built for clarity and scale</h2>
+            <p class="section-desc">
+              Case studies highlighting design system architecture, enterprise tooling, and editorial digital products.
+            </p>
+          </div>
+          <!-- Project Category Filter -->
+          <div class="project-filters" role="tablist" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All Works</button>
+            <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="systems">Design Systems</button>
+            <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="product">Product UX</button>
+            <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="editorial">Editorial</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="systems" data-project-id="subtle-ds">
+            <div class="project-visual visual-subtle">
+              <div class="visual-inner">
+                <span class="visual-tag">Design System</span>
+                <div class="visual-mood-badge">Rosewood Mood</div>
+                <div class="preview-mockup-strip">
+                  <div class="mockup-box box-1"></div>
+                  <div class="mockup-box box-2"></div>
+                  <div class="mockup-box box-3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="mono-meta">01 / CANONICAL SPEC</span>
+                <span class="project-year">2025–2026</span>
+              </div>
+              <h3 class="project-title">Subtle Design System</h3>
+              <p class="project-excerpt">
+                A complete interface language combining soft editorial composition, tonal materiality, rounded geometry, and Material-inspired ergonomics across eight unified moods.
+              </p>
+              <div class="project-stats-mini">
+                <div class="mini-stat">
+                  <span class="stat-lbl">Moods</span>
+                  <span class="stat-val">8 Palettes</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Tokens</span>
+                  <span class="stat-val">42 Contracts</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Target</span>
+                  <span class="stat-val">Web & Native</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-project="subtle-ds">
+                  View Case Study
+                </button>
+                <span class="project-client">Self-Initiated & Open Source</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="product" data-project-id="lumina-cloud">
+            <div class="project-visual visual-lumina">
+              <div class="visual-inner">
+                <span class="visual-tag">Enterprise SaaS</span>
+                <div class="visual-mood-badge">Console UI</div>
+                <div class="preview-mockup-strip">
+                  <div class="mockup-box box-table"></div>
+                  <div class="mockup-box box-graph"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="mono-meta">02 / PRODUCT SUITE</span>
+                <span class="project-year">2024–2025</span>
+              </div>
+              <h3 class="project-title">Lumina Cloud Telemetry Console</h3>
+              <p class="project-excerpt">
+                Redesigning high-throughput server observability for DevOps engineers. Replaced cluttered dashboard alerts with contextual drawer inspectors and calm tonal status queues.
+              </p>
+              <div class="project-stats-mini">
+                <div class="mini-stat">
+                  <span class="stat-lbl">Impact</span>
+                  <span class="stat-val">-38% MTTD</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Scale</span>
+                  <span class="stat-val">2.4M Nodes</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Squads</span>
+                  <span class="stat-val">14 Teams</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-project="lumina-cloud">
+                  View Case Study
+                </button>
+                <span class="project-client">Lumina Technologies</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="product" data-project-id="monochrome-ledger">
+            <div class="project-visual visual-fintech">
+              <div class="visual-inner">
+                <span class="visual-tag">Fintech UX</span>
+                <div class="visual-mood-badge">Calm Accounting</div>
+                <div class="preview-mockup-strip">
+                  <div class="mockup-box box-card"></div>
+                  <div class="mockup-box box-metric"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="mono-meta">03 / CREATOR ECONOMY</span>
+                <span class="project-year">2023–2024</span>
+              </div>
+              <h3 class="project-title">Monochrome Ledger & Invoicing</h3>
+              <p class="project-excerpt">
+                A distraction-free financial dashboard for independent creative studios. Built around automated reconciliation, accessible micro-interactions, and instant multi-currency billing.
+              </p>
+              <div class="project-stats-mini">
+                <div class="mini-stat">
+                  <span class="stat-lbl">Volume</span>
+                  <span class="stat-val">$18M Transacted</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Adoption</span>
+                  <span class="stat-val">4.9/5 Rating</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Time saved</span>
+                  <span class="stat-val">4 hrs/wk</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-project="monochrome-ledger">
+                  View Case Study
+                </button>
+                <span class="project-client">Vektor Studio Client</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="editorial" data-project-id="verdant-catalog">
+            <div class="project-visual visual-verdant">
+              <div class="visual-inner">
+                <span class="visual-tag">Editorial Commerce</span>
+                <div class="visual-mood-badge">Botanical Archive</div>
+                <div class="preview-mockup-strip">
+                  <div class="mockup-box box-editorial"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="mono-meta">04 / E-COMMERCE & ARCHIVE</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">Verdant Living Specimen Catalog</h3>
+              <p class="project-excerpt">
+                An editorial e-commerce experience and specimen archive for a luxury rare flora nursery. Embraced asymmetric layouts, deliberate whitespace, and rich botanical taxonomy typography.
+              </p>
+              <div class="project-stats-mini">
+                <div class="mini-stat">
+                  <span class="stat-lbl">Conversion</span>
+                  <span class="stat-val">+29% AOV</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Speed</span>
+                  <span class="stat-val">99 Perf Score</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-lbl">Reach</span>
+                  <span class="stat-val">Global Buyers</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm open-modal-btn" data-project="verdant-catalog">
+                  View Case Study
+                </button>
+                <span class="project-client">Verdant Botanical</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & COLOPHON SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="section-kicker">05 / GET IN TOUCH</div>
+          <h2 class="section-title">Let’s craft something intentional together.</h2>
+          <p class="section-desc">
+            Whether you need design system architecture, a design sprint for a complex product, or a fractional lead product designer for your startup — my inbox is open.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-method">
+              <span class="contact-method-label">Direct Correspondence</span>
+              <a href="mailto:arifian@subtle.web.id" class="contact-method-link">arifian@subtle.web.id</a>
+            </div>
+
+            <div class="contact-method">
+              <span class="contact-method-label">Location & Availability</span>
+              <p class="contact-location-text">
+                Based in Jakarta, Indonesia (WIB / UTC+7). Working comfortably with teams in Asia-Pacific, Europe, and US time zones.
+              </p>
+            </div>
+
+            <div class="social-links-list">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>LinkedIn</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://readcv.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>ReadCV</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://figma.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>Figma Community</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send a Direct Message</h3>
+          <p class="form-subtitle">Fill in your requirements. I typically respond within 24 hours.</p>
+
+          <form id="contact-form" class="styled-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Maya Wardhana" required autocomplete="name">
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@company.com" required autocomplete="email">
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-interest" class="form-label">Topic of Engagement</label>
+              <select id="contact-interest" name="interest" class="form-select">
+                <option value="systems">Design System Architecture & Audit</option>
+                <option value="product">End-to-End Product Design</option>
+                <option value="advisory">Design Advisory & Team Mentorship</option>
+                <option value="other">General Inquiries / Coffee Chat</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Project Details & Context <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="contact-message" name="message" rows="4" class="form-textarea" placeholder="Tell me about your product, timeline, and current design challenges..." required></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Deliver Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+            <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer & Colophon -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="colophon-block">
+        <h4 class="colophon-title">Colophon & Specifications</h4>
+        <p class="colophon-text">
+          Designed and hand-coded in pure semantic HTML, CSS, and vanilla JavaScript following the <strong>Subtle Design System</strong> specification in the <strong>Rosewood Mood</strong>. Typeset in Lexend Deca, Inclusive Sans, and JetBrains Mono. Built with zero runtime frameworks for instant rendering and minimal carbon footprint.
+        </p>
+      </div>
+
+      <div class="footer-meta-row">
+        <div class="footer-copy">
+          © <span id="current-year">2026</span> Arifian. All rights reserved. Quiet expression. Tonal depth. Product rigor.
+        </div>
+        <div class="footer-extra">
+          <span class="mono-meta">Local Time: <span id="local-time-clock">--:-- WIB</span></span>
+          <a href="#hero" class="back-to-top" aria-label="Return to top of page">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SOFT COMMAND BAR / MODAL DIALOG -->
+  <dialog id="cmd-dialog" class="cmd-modal" aria-labelledby="cmd-modal-title">
+    <div class="cmd-dialog-content">
+      <div class="cmd-dialog-header">
+        <div class="cmd-search-wrapper">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="cmd-search-input" class="cmd-input" placeholder="Type a command or jump to section..." autocomplete="off" aria-label="Search portfolio commands">
+        </div>
+        <button type="button" class="cmd-close-btn" id="cmd-close-btn" aria-label="Close command palette">
+          <kbd>ESC</kbd>
+        </button>
+      </div>
+
+      <div class="cmd-results" id="cmd-results" role="listbox">
+        <div class="cmd-group-label">Navigation & Sections</div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="goto" data-target="#hero">
+          <span class="cmd-item-title">Overview & Philosophy</span>
+          <span class="cmd-item-badge">#hero</span>
+        </div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="goto" data-target="#skills">
+          <span class="cmd-item-title">Bento Craft & Live Token Tester</span>
+          <span class="cmd-item-badge">#skills</span>
+        </div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="goto" data-target="#experience">
+          <span class="cmd-item-title">Career Experience Timeline</span>
+          <span class="cmd-item-badge">#experience</span>
+        </div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="goto" data-target="#education">
+          <span class="cmd-item-title">Education & HCI Background</span>
+          <span class="cmd-item-badge">#education</span>
+        </div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="goto" data-target="#projects">
+          <span class="cmd-item-title">Selected Case Studies</span>
+          <span class="cmd-item-badge">#projects</span>
+        </div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="goto" data-target="#contact">
+          <span class="cmd-item-title">Contact & Advisory Inquiry</span>
+          <span class="cmd-item-badge">#contact</span>
+        </div>
+
+        <div class="cmd-group-label">Quick Actions</div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="copy-email">
+          <span class="cmd-item-title">Copy Arifian's Direct Email</span>
+          <span class="cmd-item-badge">arifian@subtle.web.id</span>
+        </div>
+        <div class="cmd-item" role="option" tabindex="0" data-action="toggle-inspector">
+          <span class="cmd-item-title">Jump to Interactive Live Token Inspector</span>
+          <span class="cmd-item-badge">Demo</span>
+        </div>
+      </div>
+
+      <div class="cmd-dialog-footer">
+        <span>Use <kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+        <span><kbd>Enter</kbd> to select</span>
+        <span><kbd>Esc</kbd> to close</span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ACCESSIBLE PROJECT DETAILS MODAL / DRAWER -->
+  <dialog id="project-modal" class="project-modal-dialog" aria-labelledby="modal-project-title">
+    <div class="project-modal-wrapper">
+      <div class="modal-header">
+        <div>
+          <span class="modal-eyebrow mono-meta" id="modal-project-category">CASE STUDY</span>
+          <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+        </div>
+        <button type="button" class="modal-close-icon" id="project-modal-close" aria-label="Close project details">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-project-content">
+        <!-- Dynamic content inserted by script.js -->
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modal-close-action">Close Window</button>
+        <a href="#contact" class="btn btn-primary" id="modal-inquire-action">Discuss Similar Project</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Container for Accessible Feedback -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
